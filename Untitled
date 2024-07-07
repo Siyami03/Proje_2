@@ -1,0 +1,52 @@
+1*****STORYNIN BIZE ASSIGN EDILMESI
+Story Name:
+US142013_Yeni_Dekan_Oluşturma
+
+Açıklama: 
+Kullanıcı yönetici olarak yeni bir dekan oluşturabilmelidir.
+
+Kabul Kriterleri: 
+Given: Admin olarak giriş yapmış durumdayım 
+When: Dekan Yönetimi'ne gidersem 
+And: Tüm alanları doldurursam 
+Then: "Dean Created" mesajıyla yeni bir dekan oluşturulmalıdır.
+
+Not: Kullanıcı adı, telefon numarası ve SSN benzersiz olmalıdır.
+2*****STORYNIN ANLASILMASI
+User story nin daha iyi anlasilabilmesi icin genel bir test yapilir
+3*****TEST CASE CREATION
+User story anlasildiktan sonra TEST CASE / TEST SCENARIO YAZILIR
+
+Test Case 1 (Positive):
+Given: Admin olarak giriş yapmış durumdayım 
+When: Dekan Yönetimi'ne gidersem 
+And: Tüm alanları doldurursam 
+Ve Sumbit butonuna tiklarim
+Then: "Dean Created" mesajıyla yeni bir dekan oluşturulmalıdır.
+
+Test Case 2 (Negative):
+Given: Admin olarak giriş yapmış durumdayım 
+When: Dekan Yönetimi'ne gidersem 
+And: name haric diger alanlari girerim
+Ve Sumbit butonuna tiklarim
+Then: "Dean Created" mesajıyla yeni bir dekan oluşturulMAmalıdır.
+
+Test Case 3 (Negative):
+Given: Admin olarak giriş yapmış durumdayım 
+When: Dekan Yönetimi'ne gidersem 
+And: Tüm alanları doldurursam
+And:  date of birth olarak gelecek tarih girerim
+Ve Sumbit butonuna tiklarim
+Then: "Dean Created" mesajıyla yeni bir dekan oluşturulMAmalıdır.
+
+
+Test Case 4 (Negative):
+Given: Admin olarak giriş yapmış durumdayım 
+When: Dekan Yönetimi'ne gidersem 
+And: Tüm alanları doldurursam
+And:  ssn olarak bir onceki olusturdugum dean in ssn ini kullanirim
+Ve Sumbit butonuna tiklarim
+Then: "Dean Created" mesajıyla yeni bir dekan oluşturulMAmalıdır.
+
+4******TEST EXECUTION
+
